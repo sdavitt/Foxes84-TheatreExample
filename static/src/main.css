@@ -1,0 +1,121 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+.caption {
+    position: absolute;
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 8vw;
+    font-weight: bold;
+}
+
+#readbutton {
+    color: white;
+    background-color: orange;
+    border-color: lightgray;
+}
+
+#playcol {
+    border-color: lightgray;
+    border-width: 1px;
+    border-style: solid;
+    background-image: linear-gradient(white, lightgray);
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+}
+#playcol p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 50px 100px;
+    background: black;
+}
+
+.footercontainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1.5fr 1fr 1fr;
+    margin-bottom: 100px;
+    column-gap: 30px;
+}
+
+.footercontainer .section h2 {
+    position: relative;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.footercontainer .section p {
+    color: white;
+}
+
+.shows, .social {
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    font-size: 15px;
+    row-gap: 0px;
+}
+
+.shows li, .social li {
+    list-style: none;
+}
+
+.shows li a, .social li a {
+    color: white;
+    text-decoration: none;
+}
+
+.shows li a:hover, .social li a:hover{
+    color: #ffeb3b;
+}
+
+.info {
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    font-size: 15px;
+    row-gap:30px;
+    margin-left: -30px;
+}
+
+.info li {
+    display: grid;
+    grid-template-columns: 0.1fr 1fr;
+}
+
+.info li span {
+    color: white;
+}
+
+@media screen and (max-width: 960px) { 
+    .footercontainer { 
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr 1fr; 
+        grid-template-areas: "map info" "shows social"; 
+    } 
+}
+
+.map{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.map iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
